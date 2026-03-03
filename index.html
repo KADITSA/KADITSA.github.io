@@ -1,135 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KADITSA — Asian Culture House</title>
-<meta name="description" content="A structured platform for Asian creative and cultural showcases." />
-<meta name="robots" content="index,follow" />
-<link rel="canonical" href="https://kaditsa.github.io/" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-:root{
---bg:#f6f6f6;
---card:#f1f1f1;
---text:#1f1f1f;
---muted:#6a6a6a;
---border:#e2e2e2;
---pill:#ededed;
+
+/* =============================
+   BRAND VARIABLES
+============================= */
+:root {
+  --porcelain: #F8F6F2;
+  --jade: #0F4C45;
 }
-*{box-sizing:border-box}
-body{
-margin:0;
-font-family:Lato, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.55;
+
+/* =============================
+   GLOBAL
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.wrap{
-max-width:980px;
-margin:0 auto;
-padding:56px 24px 40px;
+
+body {
+  background-color: var(--porcelain);
+  color: var(--jade);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  text-align: center;
 }
-h1{
-margin:0 0 8px;
-font-size:44px;
-letter-spacing:-0.5px;
+
+/* =============================
+   HEADER
+============================= */
+header {
+  padding: 100px 20px 60px;
 }
-.sub{
-margin:0 0 22px;
-font-size:18px;
-color:var(--muted);
-font-weight:300;
+
+.logo-title {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 72px;
+  letter-spacing: 2px;
 }
-.card{
-background:var(--card);
-border:1px solid var(--border);
-border-radius:10px;
-padding:18px;
-margin:18px 0 26px;
+
+.tagline {
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-top: 12px;
 }
-.card h2{
-margin:0 0 6px;
-font-size:20px;
+
+/* =============================
+   CONTENT
+============================= */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
-.meta{
-color:var(--muted);
-font-size:14px;
-margin:0 0 10px;
+
+h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
-.tags{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-top:10px;
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-.tag{
-padding:6px 12px;
-border:1px solid var(--border);
-background:var(--pill);
-border-radius:999px;
-font-size:13px;
+
+.section {
+  margin-bottom: 80px;
 }
-.section{
-padding:22px 0;
-border-top:1px solid var(--border);
+
+/* =============================
+   FOOTER
+============================= */
+footer {
+  padding: 80px 20px;
 }
-.section:first-of-type{border-top:none}
-.section h3{
-margin:0 0 10px;
-font-size:14px;
-letter-spacing:0.06em;
-text-transform:uppercase;
+
+.footer-logo {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
-ul{
-margin:10px 0 0 18px;
+
+.footer-sub {
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
-footer{
-border-top:1px solid var(--border);
-padding-top:18px;
-margin-top:18px;
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:10px;
-color:var(--muted);
-font-size:13px;
+
+.copyright {
+  font-size: 14px;
 }
-.logo-box{
-width:70px;
-height:70px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#0f2a22;
-border-radius:6px;
-overflow:hidden;
-}
-.logo-box img{
-width:70px;
-height:70px;
-object-fit:contain;
-}
+
 </style>
 </head>
 
 <body>
-<main class="wrap">
 
-<h1>KADITSA</h1>
-<p class="sub">A structured platform for Asian creative and cultural showcases.</p>
+<header>
+  <div class="logo-title">KADITSA</div>
+  <div class="tagline">Asian Culture House</div>
+</header>
 
-<div class="card">
-<h2>Designer Week — 1st Edition</h2>
-<p class="meta"><strong>October 17–18, 2026</strong> · Lisbon, Portugal (expansion planned in future editions)</p>
-<p class="meta"><strong>B2B Preview</strong> · Invite-only preview ahead of public access</p>
+<main>
 
-<div class="tags">
+  <div class="section">
+    <h2>Designer Week — 1st Edition</h2>
+    <p>October 17–18, 2026 · Lisbon, Portugal</p>
+    <p>B2B Preview · Invite-only preview ahead of public access.</p>
+  </div>
+
+  <div class="tags">
 <span class="tag">Community</span>
 <span class="tag">Culture</span>
 <span class="tag">Design</span>
@@ -148,7 +140,7 @@ object-fit:contain;
 <ul>
 <li>Up to 25 designers, each presenting 10 featured designs</li>
 <li>VIP Preview Night + Public Exhibition Day</li>
-<li>B2B Preview — invite-only session for buyers, media, and institutional partners</li>
+<li>Private B2B Buyer Preview — By invitation-only.</li>
 <li>Pre-order driven sales model</li>
 <li>Engagement strategy includes outreach to ambassadors, media representatives, and institutional partners</li>
 </ul>
@@ -165,19 +157,18 @@ object-fit:contain;
 <p>Kaditsa is initiated and structured by an independent project lead currently based in Lisbon. The focus remains on building a credible platform rather than personal visibility.</p>
 </section>
 
-<section class="section">
+  <section class="section">
 <strong>Partnerships & General:</strong> hello@kaditsa.com<br>
 <strong>Press:</strong> press@kaditsa.com<br>
 <strong>Events:</strong> events@kaditsa.com<br>
 <strong>Support:</strong> support@kaditsa.com
 </section>
-
+  
 <footer>
-<div class="logo-box">
-<img src="logo.png" alt="KADITSA logo">
-<div>© 2026 Kaditsa</div>
+  <div class="footer-logo">KADITSA</div>
+  <div class="footer-sub">Asian Culture House</div>
+  <div class="copyright">© 2026 Asian Culture House</div>
 </footer>
 
-</main>
 </body>
 </html>
