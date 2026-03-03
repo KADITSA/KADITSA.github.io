@@ -5,22 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KADITSA — Asian Culture House</title>
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-/* =============================
-   BRAND VARIABLES
-============================= */
+/* ============================= */
+/* BRAND SYSTEM */
+/* ============================= */
+
 :root {
   --porcelain: #F8F6F2;
   --jade: #0F4C45;
 }
 
-/* =============================
-   GLOBAL
-============================= */
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -31,71 +32,114 @@ body {
   background-color: var(--porcelain);
   color: var(--jade);
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+  padding: 40px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+  padding: 120px 0 80px;
   text-align: center;
 }
 
-/* =============================
-   HEADER
-============================= */
-header {
-  padding: 100px 20px 60px;
-}
-
-.logo-title {
+.hero h1 {
   font-family: 'League Spartan', sans-serif;
-  font-size: 72px;
+  font-size: 64px;
   letter-spacing: 2px;
-}
-
-.tagline {
-  font-size: 14px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  margin-top: 12px;
-}
-
-/* =============================
-   CONTENT
-============================= */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-h2 {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.section {
-  margin-bottom: 80px;
-}
-
-/* =============================
-   FOOTER
-============================= */
-footer {
-  padding: 80px 20px;
-}
-
-.footer-logo {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 28px;
   margin-bottom: 10px;
 }
 
-.footer-sub {
-  font-size: 12px;
-  letter-spacing: 4px;
+.tagline {
+  letter-spacing: 6px;
   text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+/* ============================= */
+/* SECTIONS */
+/* ============================= */
+
+.section {
+  padding: 100px 0;
+}
+
+.section h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.section p {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 800px;
+}
+
+.section ul li {
+  margin-bottom: 12px;
+}
+
+/* ============================= */
+/* CONTACT SECTION */
+/* ============================= */
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--jade);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 70px;
   margin-bottom: 30px;
 }
 
@@ -109,65 +153,73 @@ footer {
 <body>
 
 <header>
-  <div class="logo-title">KADITSA</div>
-  <div class="tagline">Asian Culture House</div>
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="logo.png" alt="Kaditsa Logo">
+    </div>
+  </div>
 </header>
 
-<main>
-
-  <div class="section">
-    <h2>Designer Week — 1st Edition</h2>
-    <p>October 17–18, 2026 · Lisbon, Portugal</p>
-    <p>B2B Preview · Invite-only preview ahead of public access.</p>
+<section class="hero">
+  <div class="container">
+    <h1>KADITSA</h1>
+    <div class="tagline">Asian Culture House</div>
   </div>
-
-  <div class="tags">
-<span class="tag">Community</span>
-<span class="tag">Culture</span>
-<span class="tag">Design</span>
-</div>
-</div>
-
-<section class="section">
-<h3>ABOUT</h3>
-<p>Kaditsa is an independent cultural platform focused on presenting Asian creative work within a structured, professional framework.</p>
-<p>The platform is built to support long-term continuity through financial clarity, operational discipline, and defined execution roles.</p>
 </section>
 
 <section class="section">
-<h3>DESIGNER WEEK</h3>
-<p>Designer Week is a two-day selected showcase structured for quality control and measurable performance.</p>
-<ul>
-<li>Up to 25 designers, each presenting 10 featured designs</li>
-<li>VIP Preview Night + Public Exhibition Day</li>
-<li>Private B2B Buyer Preview — By invitation-only.</li>
-<li>Pre-order driven sales model</li>
-<li>Engagement strategy includes outreach to ambassadors, media representatives, and institutional partners</li>
-</ul>
+  <div class="container">
+    <h2>ABOUT</h2>
+    <p>Kaditsa is an independent cultural platform focused on presenting Asian creative work within a structured, professional framework.</p>
+    <p>The platform is built to support long-term continuity through financial clarity, operational discipline, and defined execution roles.</p>
+  </div>
 </section>
 
 <section class="section">
-<h3>STRUCTURE</h3>
-<p>Kaditsa is built around defined execution roles and a controlled financial framework. Production is designed to be sponsorship-supported, with administrative legal hosting during the establishment phase.</p>
-<p>Objective: stability before scale.</p>
+  <div class="container">
+    <h2>DESIGNER WEEK</h2>
+    <p>Designer Week is a two-day selected showcase structured for quality control and measurable performance.</p>
+    <ul>
+      <li>Up to 25 designers, each presenting 10 featured designs</li>
+      <li>VIP Preview Night + Public Exhibition Day</li>
+      <li>Private B2B Buyer Preview — By invitation-only.</li>
+      <li>Pre-order driven sales model</li>
+      <li>Engagement strategy includes outreach to ambassadors, media representatives, and institutional partners</li>
+    </ul>
+  </div>
 </section>
 
 <section class="section">
-<h3>PROJECT LEAD</h3>
-<p>Kaditsa is initiated and structured by an independent project lead currently based in Lisbon. The focus remains on building a credible platform rather than personal visibility.</p>
+  <div class="container">
+    <h2>STRUCTURE</h2>
+    <p>Kaditsa is built around defined execution roles and a controlled financial framework. Production is designed to be sponsorship-supported, with administrative legal hosting during the establishment phase.</p>
+    <p>Objective: stability before scale.</p>
+  </div>
 </section>
 
-  <section class="section">
+<section class="section">
+  <div class="container">
+    <h2>PROJECT LEAD</h2>
+    <p>Kaditsa is initiated and structured by an independent project lead currently based in Lisbon. The focus remains on building a credible platform rather than personal visibility.</p>
+  </div>
+</section>
+
+<section class="section">
 <strong>Partnerships & General:</strong> hello@kaditsa.com<br>
 <strong>Press:</strong> press@kaditsa.com<br>
 <strong>Events:</strong> events@kaditsa.com<br>
 <strong>Support:</strong> support@kaditsa.com
 </section>
-  
+
 <footer>
-  <div class="footer-logo">KADITSA</div>
-  <div class="footer-sub">Asian Culture House</div>
-  <div class="copyright">© 2026 Asian Culture House</div>
+  <div class="container">
+    <div class="footer-logo">
+      <img src="logo.png" alt="Kaditsa Logo">
+    </div>
+    <div class="copyright">
+      © 2026 Asian Culture House
+    </div>
+  </div>
 </footer>
 
 </body>
