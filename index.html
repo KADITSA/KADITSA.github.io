@@ -78,13 +78,11 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
-.section-alt {
+.section-alt-wrap {
   background: var(--jade-soft);
-  padding: 80px 40px;
 }
-.section-alt-inner {
-  max-width: 900px;
-  margin: 0 auto;
+.section-alt-wrap .section {
+  background: transparent;
 }
 .section-title {
   font-family: 'League Spartan', sans-serif;
@@ -113,7 +111,6 @@ li {
   position: relative;
 }
 li::before {
-  content: 'E2 80 94';
   content: '\2014';
   position: absolute;
   left: 0;
@@ -167,7 +164,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 600px) {
   .hero { padding: 70px 20px 60px; }
   .event-card { padding: 22px 22px; }
-  .section, .section-alt { padding: 60px 20px; }
+  .section { padding: 60px 20px; }
 }
 </style>
 </head>
@@ -196,8 +193,8 @@ a:hover { text-decoration: underline; }
 
 <hr class="divider">
 
-<div class="section-alt">
-  <div class="section-alt-inner">
+<div class="section-alt-wrap">
+  <div class="section">
     <div class="section-title">DESIGN WEEK BY KADITSA</div>
     <p>Design Week by Kaditsa is a two-day design exhibition where selected designers present their work to audiences, buyers, and invited guests.</p>
     <ul>
@@ -221,8 +218,8 @@ a:hover { text-decoration: underline; }
 
 <hr class="divider">
 
-<div class="section-alt">
-  <div class="section-alt-inner">
+<div class="section-alt-wrap">
+  <div class="section">
     <div class="section-title">PRESENT WITH US</div>
     <p>Kaditsa is developing a platform where independent designers and studios from across Asia can present their work within a professional, industry-facing context.</p>
     <p>As we build towards our first edition, we are bringing together a focused selection of designers — creating space for considered work to be seen by new audiences, connect with buyers, and develop long-term international visibility.</p>
