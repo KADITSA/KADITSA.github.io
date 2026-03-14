@@ -10,7 +10,6 @@
   --porcelain: #F8F6F2;
   --jade: #0F4C45;
   --jade-soft: rgba(15,76,69,0.06);
-  --jade-mid: rgba(15,76,69,0.12);
   --border: rgba(15,76,69,0.15);
 }
 
@@ -26,7 +25,7 @@ body {
   line-height: 1.75;
 }
 
-/* ── HERO ── */
+/* HERO */
 .hero {
   background: var(--jade);
   color: var(--porcelain);
@@ -43,64 +42,57 @@ body {
 }
 
 .hero .subtitle {
-  font-size: clamp(13px, 1.4vw, 16px);
+  font-size: 16px;
   font-weight: 300;
   max-width: 750px;
-  margin: 0 auto 40px;
+  margin: 0 auto 48px;
   opacity: 0.85;
   line-height: 1.7;
 }
 
-/* ── EVENT CARD (unchanged in design, lifted into hero) ── */
+/* EVENT CARD */
 .event-card {
   display: inline-block;
   border: 1px solid rgba(248,246,242,0.25);
-  border-radius: 12px;
-  padding: 20px 26px;
+  border-radius: 16px;
+  padding: 28px 36px;
   text-align: left;
-  max-width: 380px;
+  max-width: 480px;
   width: 100%;
   background: rgba(248,246,242,0.07);
 }
 
 .event-card h2 {
   font-family: 'League Spartan', sans-serif;
-  font-size: 16px;
-  margin: 0 0 6px;
+  font-size: 20px;
+  margin: 0 0 8px;
   color: var(--porcelain);
 }
 
 .event-date {
   font-weight: 500;
-  font-size: 13px;
-  margin-bottom: 16px;
+  font-size: 14px;
+  margin-bottom: 20px;
   opacity: 0.8;
   color: var(--porcelain);
 }
 
 .tags {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .tag {
   border: 1px solid rgba(248,246,242,0.35);
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--porcelain);
   opacity: 0.85;
 }
 
-/* ── WRAPPER ── */
-.wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* ── SECTIONS ── */
+/* SECTIONS */
 .section {
   padding: 80px 20px;
   max-width: 900px;
@@ -156,14 +148,14 @@ li::before {
   top: 2px;
 }
 
-/* ── DIVIDER ── */
+/* DIVIDER */
 .divider {
   border: none;
   border-top: 1px solid var(--border);
   margin: 0;
 }
 
-/* ── CONTACT ── */
+/* CONTACT */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -204,24 +196,22 @@ li::before {
   opacity: 0.8;
 }
 
-/* ── FOOTER ── */
+/* FOOTER */
 footer {
-  margin-top: 0;
-  padding: 60px 20px;
+  margin-top: 120px;
+  padding-top: 60px;
   border-top: 1px solid var(--border);
   text-align: center;
-  background: var(--porcelain);
 }
 
 .footer-logo img {
   height: 40px;
-  margin-top: 0;
+  margin-top: 40px;
 }
 
 .footer-copy {
   margin-top: 15px;
   font-size: 14px;
-  opacity: 0.5;
 }
 
 a {
@@ -268,7 +258,7 @@ a:hover {
   <div class="section-title">ABOUT</div>
   <p>Kaditsa is taking shape as a focused platform for presenting designers from across Asia within a clear and professional framework.</p>
   <p>It was created around an observation rooted in experience — that across Asia, there are designers and studios producing strong, considered work that has yet to find its place on international platforms. Kaditsa is being built to create that context: structured, focused, and centered around the work itself.</p>
-  <p>At this stage, it works with independent designers and small design studios, developing opportunities to present their work, connect with audiences, and build international visibility.</p>
+  <p>At this stage, it is bringing together independent designers and small design studios, developing opportunities to present their work, connect with audiences, and build international visibility.</p>
 </div>
 
 <hr class="divider">
@@ -300,6 +290,30 @@ a:hover {
 
 <hr class="divider">
 
+<!-- PRESENT WITH US -->
+<div class="section-alt">
+  <div class="section-inner">
+    <div class="section-title">PRESENT WITH US</div>
+    <p>Kaditsa is developing a platform where independent designers and studios from across Asia can present their work within a professional, industry-facing context.</p>
+    <p>As we build towards our first edition, we are bringing together a focused selection of designers — creating space for considered work to be seen by new audiences, connect with buyers, and develop long-term international visibility.</p>
+    <p>If your practice is intentional and your work is ready for an international stage, we would like to hear from you.</p>
+    <p>Write to us at <a href="mailto:hello@kaditsa.com">hello@kaditsa.com</a></p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- COLLABORATE -->
+<div class="section">
+  <div class="section-title">COLLABORATE</div>
+  <p>Kaditsa is open to creative exchange with design platforms, institutions, and organizations that share an interest in independent, intentional design.</p>
+  <p>We believe that dialogue between different design contexts — across Asia and beyond — creates value for everyone involved. We are interested in building connections that go beyond a single event, developing ongoing exchange between design communities.</p>
+  <p>If your organization sees value in that kind of dialogue, we would be glad to connect.</p>
+  <p>Write to us at <a href="mailto:hello@kaditsa.com">hello@kaditsa.com</a></p>
+</div>
+
+<hr class="divider">
+
 <!-- CONTACT -->
 <div class="section">
   <div class="section-title">CONTACT</div>
@@ -307,13 +321,32 @@ a:hover {
   <div class="contact-grid">
     <div class="contact-item">
       <span class="contact-label">Partnerships & General</span>
-      <a href="/cdn-cgi/l/email-protection#28404d4444476843494c415c5b49064b4745"><span class="__cf_email__" data-cfemail="c1a9a4adadae81aaa0a5a8b5b2a0efa2aeac">[email&#160;protected]</span></a>
+      <a href="mailto:hello@kaditsa.com">hello@kaditsa.com</a>
     </div>
     <div class="contact-item">
       <span class="contact-label">Press</span>
-      <a href="/cdn-cgi/l/email-protection#80f0f2e5f3f3c0ebe1e4e9f4f3e1aee3efed"><span class="__cf_email__" data-cfemail="374745524444775c56535e4344561954585a">[email&#160;protected]</span></a>
+      <a href="mailto:press@kaditsa.com">press@kaditsa.com</a>
     </div>
     <div class="contact-item">
       <span class="contact-label">Events</span>
-      <a href="/cdn-cgi/l/email-protection#325744575c4641725953565b4641531c515d5f"><span class="__cf_email__" data-cfemail="056073606b7176456e64616c7176642b666a68">[email&#160;protected]</span></a>
-    </d
+      <a href="mailto:events@kaditsa.com">events@kaditsa.com</a>
+    </div>
+    <div class="contact-item">
+      <span class="contact-label">Support</span>
+      <a href="mailto:support@kaditsa.com">support@kaditsa.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="logo.png" alt="Kaditsa Logo">
+  </div>
+  <div class="footer-copy">
+    © 2026 KADITSA — Asian Design Platform
+  </div>
+</footer>
+
+</body>
+</html>
