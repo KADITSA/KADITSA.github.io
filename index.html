@@ -152,14 +152,15 @@ li::before {
   opacity: 0.8;
 }
 footer {
-  margin-top: 30px;
+  margin-top: 0px;
   padding-top: 60px;
   border-top: 1px solid var(--border);
   text-align: center;
 }
 .footer-logo img { height: 40px; margin-top: 40px; }
-.footer-copy { margin-top: 15px; font-size: 14px; }
-a { color: var(--jade); text-decoration: none; }
+.section:last-of-type {
+  padding-bottom: 40px;
+}a { color: var(--jade); text-decoration: none; }
 a:hover { text-decoration: underline; }
 @media (max-width: 600px) {
   .hero { padding: 70px 20px 60px; }
